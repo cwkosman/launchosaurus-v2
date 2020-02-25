@@ -83,7 +83,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Shopify, Inc. Built with Docusaurus.`,
     },
-    disableDarkMode: true
+    disableDarkMode: true,
+    googleAnalytics: {
+      trackingID: 'UA-130314353-4',
+    },
   },
   presets: [
     [
