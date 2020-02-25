@@ -1,26 +1,21 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Launch Welcome Kit',
+  tagline: '🚀 Preparing to put merchants into space 🚀',
+  url: 'https://launchosaurus-v2.cwkosman.dev',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'shopify', // Usually your GitHub org/user name.
+  projectName: 'launchosaurus-v2', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Launch Welcome Kit',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Launch Welcome Kit Logo',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {to: 'docs/index', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -30,12 +25,24 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Welcome',
+              to: 'docs/index',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Plan',
+              to: 'docs/plan/plan',
+            },
+            {
+              label: 'Implement',
+              to: 'docs/implement/implement',
+            },
+            {
+              label: 'Test',
+              to: 'docs/test/test',
+            },
+            {
+              label: 'Launch',
+              to: 'docs/launch/launch',
             },
           ],
         },
@@ -43,35 +50,40 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Help Center', // string - the label that should be displayed.
+              href: 'https://help.shopify.com' // string - the target URL.
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Developers', // string - the label that should be displayed.
+              href: 'https://shopify.dev' // string - the target URL.
             },
+            {
+              label: 'Partner Academy', // string - the label that should be displayed.
+              href: 'https://www.shopify.ca/partners/academy' // string - the target URL.
+            }
           ],
         },
         {
           title: 'Social',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Launch Blog',
+              href: 'blog',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Plus Blog',
+              href: 'https://www.shopify.ca/enterprise',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/ShopifyPlus',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Shopify, Inc. Built with Docusaurus.`,
     },
+    disableDarkMode: true
   },
   presets: [
     [
@@ -80,7 +92,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/cwkosman/launchosaurus-v2/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

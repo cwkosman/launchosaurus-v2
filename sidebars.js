@@ -6,8 +6,50 @@
  */
 
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-  },
+  docs: [
+    {
+      type: 'doc',
+      id: 'index'
+    },
+    {
+      type: 'category',
+      label: 'Plan',
+      items: ['plan/plan', 'plan/identifying-stakeholders'],
+    },
+    {
+      type: 'category',
+      label: 'Implement',
+      items: [
+        {
+          type: 'doc',
+          id: 'implement/implement'
+        },
+        {
+          type: 'category',
+          label: 'Build',
+          items: ['implement/build/build']
+        },
+        {
+          type: 'category',
+          label: 'Integrate',
+          items: ['implement/integrate/integrate']
+        },
+        {
+          type: 'category',
+          label: 'Migrate',
+          items: ['implement/migrate/migrate']
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Test',
+      items: ['test/test'],
+    },
+    {
+      type: 'category',
+      label: 'Launch',
+      items: ['launch/launch'],
+    }
+  ]
 };

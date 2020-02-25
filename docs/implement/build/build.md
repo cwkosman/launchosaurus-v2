@@ -1,8 +1,11 @@
 ---
-id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+id: build
+title: Build
 ---
+
+> You're special, just like everyone else
+
+Time to put things together!
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
